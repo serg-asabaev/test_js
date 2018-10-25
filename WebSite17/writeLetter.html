@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+   <title>Моя почта</title>
+   <link rel="StyleSheet" type="text/css" href="StyleSheet.css" />
+    <style>  
+      #letterTop {
+          margin-top:20px;
+          font-size:larger;
+               }
+        .writer {
+          width:500px;
+          margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"><font size="6" face="cursive" color="6BE1A8">Моя почта</font></div>
+    <div id="wraper">
+    <div id="left" >
+      <div id="Menu">
+        <button class="btn">Написать письмо</button><br>
+        <button class="btn" class="j-submit-report" onclick="window.location.href='myMail.html'">Входящие</button><br>
+        <button class="btn" class="j-submit-report" onclick="window.location.href='shippedLetter.html'">Отправленные</button><br>
+        <button class="btn" class="j-submit-report" onclick="window.location.href='drafts.html'">Черновики</button><br>
+        <button class="btn" class="j-submit-report" onclick="window.location.href='basket.html'">Корзина</button><br>
+        <button class="btn" class="j-submit-report" onclick="window.location.href='spam.html'">Спам</button><br>
+      </div> 
+    </div>
+    <div id="right">
+        <div id="writeWrap">
+        <header id="letterTop"><font size="4" face="cursive">Написать</font></header>
+          Кому:
+        <input type="email" class="writer"><br>
+           Тема: 
+        <input type="text" class="writer"><br> 
+        <textarea id="message"></textarea><br>  
+        <button>Отправить</button>
+        </div>
+    </div>
+   </div>
+	<div id='foot'><a href='index.htm'>Вернутся на главную</a></div>
+</body>
+</html>

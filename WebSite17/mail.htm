@@ -1,0 +1,71 @@
+<html>
+<head>
+	   <link rel="StyleSheet" type="text/css" href="StyleSheet.css"/>
+	   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+   <title>вход в почту</title>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="masked.js"></script>
+    <script type='text/javascript'>
+      $(function() {
+        $( "#inputdate" ).datepicker();
+    
+	    $("#inputphone").mask("+7(999) 999-99-99");
+	
+	    $('.reg').change(function() {
+		    var empty = false;
+		    $('.reg').each(function(){
+		        if ($(this).val() === "") empty = true; 
+		    });
+
+		    if (empty)
+			    $("#btn2").attr("disabled", true);
+		    else 
+		        $('#btn2').attr('disabled', false);
+	    });
+
+      });
+  
+  </script>
+</head>
+<body>
+    <div id='main'>
+    <div id="topMail" align="center"><font size="6" face="cursive"color='6BE1A8'>Моя почта</font></div>
+	<div id="body" align="center">
+		<div id=divLogin>
+		   <div ><font color='blue' align="center" size='4'>Вход в почту.</font></div>
+		   <header>Введите свой e-mail</header>
+		   <input id='input1' type="email"><br/>
+		   <header>Введите свой пароль</header>
+		   <input id='input2' type="password"><br/>
+		   <button  id="btn1" class="j-submit-report" onclick="window.location.href='myMail.html'">Войти в почту</button>
+		   </div>
+		<div id=divReg>
+			<div class='mailhead' ><font color='blue' align='center' size='4'>Зарегистрироватся</font></div>
+			
+			<header>Фамилия.</header>
+			<input class="reg" id='input3'><br>
+			
+			<header>Имя.</header>
+			<input class="reg" id='input4'><br/>
+			
+			<header>Отчество.</header>
+			<input class="reg" id='input5'><br/>
+			
+			<header>Выберите дату своего рождения</header>
+			<input class="reg" id='inputdate'>
+			
+			<header>Номер телефона</header>
+			<input class="reg" id='inputphone'><br>
+			
+			<button id="btn2">Регистрация</button>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	
+	<div id='footMail'><a href='index.htm'>Вернутся на главную</a></div>
+	</div>
+</body>
+</html>

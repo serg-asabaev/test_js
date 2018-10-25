@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="StyleSheet" type="text/css" href="StyleSheet.css"/>
+	<script type="text/javascript">
+        function change(pic) {
+			if(pic.style.height == '300px'){
+				pic.style.height = '500px';
+				pic.style.opacity = '1';
+			} else {
+				pic.style.height = '300px';
+				pic.style.opacity = '0.5';
+			}
+		}
+        var text = [];
+		var text2 = [];
+		var str1 = ["А","Б","В’","Г","Д","Е","Ж","З","И","Й","К","Л","М","Н","О","П","Р","С","Т","У","Ф","Х","Ц","Ч","Ш","Щ","Ъ","Ы","Ь","Э","Ю","Я","а","б","в","г","д","е","ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф","х","ц","ч","ш","щ","ъ","ы","ь","э","ю","я"];
+		var str2 = ["ю","а","б","ц","д","е","ф","г","х","и","й","к","л","м","н","о","п","я","р","с","т","у","ж","в","ь","ы","з","ш","э","щ","ч","ъ","Ю","А","Б","Ц","Д","Е","Ф","Г","Х","И","Й","К","Л","М","Н","О","П","Я","Р","С","Т","У","Ж","В","Ь","Ы","З","Ш","Э","Щ","Ч","Ъ"];
+
+
+		function crypt(text,strnum) {
+			for (var i = 0; i < 70; i++) {
+					strnum[i-(-192)] = strnum[i];
+			}
+			for (var j = 0; j < text.length; j++) {
+				for (var k = 192; k < 256; k++){
+					if(text[j] === strnum[k]){
+						text2[j] = k;
+					} else if(text[j] == " "){
+						text2[j] = 32;
+						
+				}
+			}
+			return text2;
+		}
+		}
+
+		function S(){
+		var fi,x,sinus,a,b,c,d;
+		fi=90;
+		x= fi*3.1415926/180;
+		a= x*x;
+		b= x *a/6;
+		c= b *a/20;
+		d= c *a/42;
+		sinus= x-b+c-d;
+		return(sinus);
+		}
+
+		function root() {
+		    var y = 32;
+		    var x1 = 0;
+		    var x2 = y;
+		    var d = 1e-9;
+		    while (x2 - x1 > d) {
+		        x = (x2 + x1) / 2;
+		        if (x * x * x * x * x > y)
+		            x2 = x;
+		        else x1 = x;
+		    }
+		    return (x);
+		}
+
+
+
+	</script>	
+    <title>Галерея</title>
+</head>
+<body>
+    <div id='mainGal'>
+    <div id="topGal"><font size='6' face='corsive' color='red'>Моя галлерея</font></div>
+	  <img id='pic1' onclick='change(this)' src="http://tapety.tja.pl/obrazki/tja_normalne/168508.jpg"/>
+	  <img id='pic2' onclick='change(this)' src="http://tapety.tja.pl/obrazki/tja_normalne/168508.jpg"/>
+	  <img id='pic3' onclick='change(this)' src="http://skachatkartinki.net/photo/0-0/3725_84b1775524.jpg"/>
+	  <img id='pic4' onclick='change(this)' src="http://best-wallpaper.net/wallpaper/1920x1080/1412/Nature-landscape-winter-forest-National-Park-river_1920x1080.jpg"/>
+	  <img id='pic5' onclick='change(this)' src="http://www.artleo.com/pic/201403/1920x1080/artleo.com-70632.jpg"/>
+	  <img id='pic6' onclick='change(this)' src="http://img.hrhwalls.com/images4/e5k15whkdae.jpg"/>
+	</div>
+	<div id="foot" align="center"><a href="index.htm">Вернутся на главную страницу</a></div>
+</body>
+</html>

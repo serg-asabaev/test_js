@@ -1,0 +1,260 @@
+﻿html, body {
+    height: 100%;
+    left:0px;
+	position:relative;
+	min-width: 1150px;
+	width:100%;
+}
+
+#main{
+    min-height: 100%;
+	position:relative;
+	background-color:#B3F574;
+}
+#mainGal{
+    margin: -10px 0px 0px -10px;
+	min-height: 100%; 
+	position:relative;
+	background-color:palegreen;
+	
+}
+#wraper {
+    width:100%;
+}
+#MainMenu 
+{	
+	padding:15px;
+    height: auto;
+    font-size:medium;
+    font-style:normal; 
+}
+#top{
+    margin:-10px 0px 0px 0px;
+	padding-top: 15px; 
+	font-size:large;
+	height:60px;
+	width: 100%;
+	background-color:#4C9506;
+    text-align:center;
+}
+
+#topMail {
+    margin:-10px 0px 0px 0px;
+	padding-top: 15px; 
+	font-size:large;
+	height:60px;
+	width: 100%;
+	background-color:#59B700;
+    text-align:center;
+}
+#body{
+   margin: 10px auto;
+   padding: 35px;
+   width: 600px;
+   background-color:#85EE21;
+   border:1px solid black;
+   border-radius:10px;
+}
+
+#divLogin
+{
+  width: 250px;
+  float: left;
+}
+#divReg
+{
+  width: 300px;
+  margin-left: 250px;
+}
+
+#left{
+    float:left;
+    height:650px;
+	width: 180px;
+	left:0px;
+    font-size:large;
+	padding-top: 40px;
+	background-color: #BDED70;
+}
+
+#Menu {
+    margin-left:15px;
+	margin-top:20px
+}
+
+.btn {
+   float:left;
+   width:150px;
+   margin-top:5px;
+   text-align:center;
+   background-color:#DCC84F;
+}
+.btn:hover {
+	background-color: white;
+}
+#right{
+	height:680px;
+    right: 0px;
+    margin-left: 181px;
+	padding-top:10px;
+	background-color: #A0D24E ;
+	border-left: 1px solid black;
+    text-align:center;
+    font-size:medium;
+}
+img {
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 300px;
+	opacity: 0.5;
+	transition-property: opacity height;
+	transition-duration: 3s;
+}
+
+#topGal {
+    padding-top: 15px;
+	font-size:larger;
+	height:50px;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+	background-color: skyblue;
+	text-align:center;
+    color:red;
+}
+
+
+#foot {
+   padding-top:5px;
+   height:35px;
+   width: 100%;
+   background-color: #5AA9B0;
+   text-align:center;
+   float: left
+}
+
+
+#footMail{
+   margin-top:10px;
+   padding-top:5px;
+   height:35px;
+   width: 100%;
+   background-color:#DAFA23;
+   text-align:center;
+   border-top:1px solid #00C265;
+   position: absolute;
+   bottom: 0px;
+   left:0px;
+   }
+   
+input{
+    margin-top:10px;
+	margin-bottom:15px;
+	
+}
+
+
+
+.letter {
+    width:150px;
+    height:25px;
+    margin-top:10px;
+    margin-left:15px;
+    background-color:#FFEC78;
+}
+
+.messageTable{
+   margin:22px auto;
+   min-width:500px;
+   width:90%;
+   background-color:antiquewhite;
+   text-align:center;
+}
+
+#letterHead{
+   backGround-color:#6BE1A8;
+}
+
+#writeWrap {
+    width:90%;
+    margin:20px auto;
+}
+.writer {
+   margin-left:20px;
+}
+
+#message {
+    margin:30px auto;
+    height:400px;
+    min-width:500px;
+    width:90%
+}
+
+.track{
+    width:500px;
+    height:70px;
+	background-color:aqua;
+	text-align:center;
+	margin-top:20px;
+	padding-top:5px;
+	box-shadow:2px 2px 3px gray;
+}
+.track:hover{
+	background-color:skyblue;
+}
+#pict{
+   height:50px;
+   width:50px;
+   float:left;
+}
+
+#musicTop {
+   margin-top:-10px;
+   margin-left:-10px;
+   height:50px;
+   width: 100%;
+   padding-top:10px;
+   text-align:center;
+   font-size:x-large;
+   background-color:#22FF18;
+   color:#3C1AFF;
+}
+
+.playList {
+   font-size:larger;
+}
+
+#musicLeft {
+    height:500px;
+    width:25%;
+    position:relative;
+
+    background-color:salmon;
+}
+#musicMain {
+   height:auto;
+   width:75%;
+   margin-top:-10px;
+   margin-left:-10px;
+   padding-top:20px;
+   padding-left:20px;
+   padding-bottom:20px;
+   background-color:#F4F3F3;
+   position:relative;
+   right:0px;
+}
+
+audio{
+	height: 28px;
+    margin-top:5px;
+}
+
+#musicFoot {
+    height:40px;
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 100%;
+    padding-top:10px;
+    background-color:#9F8A91;
+    text-align:center;
+}

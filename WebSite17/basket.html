@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="StyleSheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+    <header id="top"><font size="6" face="cursive" color="6BE1A8">Моя почта</font></header>
+    <section id="left" text-align="center">
+        <div id="Menu">
+            <button class="btn" class="j-submit-report" onclick="window.location.href='writeLetter.html'">Написать письмо</button><br>
+            <button class="btn" class="j-submit-report" onclick="window.location.href='myMail.html'">Входящие</button><br>
+            <button class="btn" class="j-submit-report" onclick="window.location.href='shippedLetter.html'">Отправленные</button><br>
+            <button class="btn" class="j-submit-report" onclick="window.location.href='drafts.html'">Черновики</button><br>
+            <button class="btn">Корзина</button><br>
+            <button class="btn" class="j-submit-report" onclick="window.location.href='spam.html'">Спам</button><br>
+        </div>
+    </section>
+    <section id="line"></section>
+    <section id="right">
+        <button class="letter">Удалить</button>
+        <button class="letter">Очистить корзину</button><br>
+        <table class="messageTable" align='center'>
+            <tr><td></td><td id='letterHead'>От кого</td><td id='letterHead'>Дата</td><td id='letterHead'>Сообщение</td></tr>
+            <tr><td><input type='checkbox'></td><td>lorem ipsum</td><td>lorem ipsum</td><td>lorem ipsum lorem ipsum lorem ipsum...</td></tr>
+            <tr><td><input type='checkbox'></td><td>lorem ipsum</td><td>lorem ipsum</td><td>lorem ipsum lorem ipsum lorem ipsum...</td></tr>
+            <tr><td><input type='checkbox'></td><td>lorem ipsum</td><td>lorem ipsum</td><td>lorem ipsum lorem ipsum lorem ipsum...</td></tr>
+            <tr><td><input type='checkbox'></td><td>lorem ipsum</td><td>lorem ipsum</td><td>lorem ipsum lorem ipsum lorem ipsum...</td></tr>
+            <tr><td><input type='checkbox'></td><td>lorem ipsum</td><td>lorem ipsum</td><td>lorem ipsum lorem ipsum lorem ipsum...</td></tr>
+        </table>
+    </section>
+    <footer id='foot'><a href='index.htm'>Вернутся на главную</a></footer>
+</body>
+</html>
